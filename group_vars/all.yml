@@ -1,0 +1,11 @@
+---
+# Add the variables that we need to set buffers for media server
+#
+
+number_data_buffers: 512
+number_data_buffers_disk: 512
+number_data_buffers_restore: 512
+size_data_buffers: 524288
+size_data_buffers_disk: 524288
+net_buffer_sz: 0
+
