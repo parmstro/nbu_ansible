@@ -1,0 +1,6 @@
+# manually created host inventory file for NBU
+[mediaservers]
+parmstro.parmstrong.ca
+
+[masterservers]
+

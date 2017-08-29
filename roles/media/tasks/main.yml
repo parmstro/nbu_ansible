@@ -1,6 +1,11 @@
 ---
 # this file specifies the tasks for the nbu media server role
 #
+- name: ensure directory exists
+  file: 
+    path: /usr/openv/netbackup/db/config/
+    state: directory
+    mode: 755
 
 - name: Set NUMBER_DATA_BUFFERS
   template:
