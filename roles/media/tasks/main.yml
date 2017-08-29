@@ -6,30 +6,35 @@
   template:
     src: NUMBER_DATA_BUFFERS.j2
     dest: /usr/openv/netbackup/db/config/NUMBER_DATA_BUFFERS
+  notify: forcestop netbackup
   notify: restart netbackup
 
 - name: Set NUMBER_DATA_BUFFERS_DISK
   template:
     src: NUMBER_DATA_BUFFERS_DISK.j2
     dest: /usr/openv/netbackup/db/config/NUMBER_DATA_BUFFERS_DISK
+  notify: forcestop netbackup
   notify: restart netbackup
 
 - name: Set NUMBER_DATA_BUFFERS_RESTORE
   template:
     src: NUMBER_DATA_BUFFERS_RESTORE.j2
     dest: /usr/openv/netbackup/db/config/NUMBER_DATA_BUFFERS_RESTORE
+  notify: forcestop netbackup
   notify: restart netbackup
 
 - name: Set SIZE_DATA_BUFFERS
   template:
     src: SIZE_DATA_BUFFERS.j2
     dest: /usr/openv/netbackup/db/config/SIZE_DATA_BUFFERS
+  notify: forcestop netbackup
   notify: restart netbackup
 
 - name: Set SIZE_DATA_BUFFERS_DISK
   template:
     src: SIZE_DATA_BUFFERS_DISK.j2
     dest: /usr/openv/netbackup/db/config/SIZE_DATA_BUFFERS_DISK
+  notify: forcestop netbackup
   notify: restart netbackup
 
 

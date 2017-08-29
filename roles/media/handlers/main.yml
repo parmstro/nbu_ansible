@@ -1,0 +1,10 @@
+---
+# Handler to handle nbu notifications. Handlers are called by other plays.
+# See http://docs.ansible.com/playbooks_intro.html for more information about handlers.
+
+- name: forcestop netbackup
+  command: /usr/openv/netbackup/bin/bp.kill_all FORCEKILL
+
+- name: restart netbackup
+  command: /usr/openv/netbackup/bin/bp.start_all
+
