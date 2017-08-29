@@ -47,3 +47,12 @@
     - forcestop netbackup
     - restart netbackup
 
+- name: Set NET_BUFFERS_SZ
+  template:
+    src: NET_BUFFERS_SZ.j2
+    dest: /usr/openv/netbackup/NET_BUFFERS_SZ
+  notify: 
+    - forcestop netbackup
+    - restart netbackup
+
+
